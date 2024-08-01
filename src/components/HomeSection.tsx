@@ -1,14 +1,16 @@
-import profileImage from "../images/squertle.jpg";
+import profileImage from "../images/cv_picture.jpg";
+import Typewriter from "./AnimatedText";
 
 const HomeSection = () => {
   return (
     <div
       className="flex flex-row justify-center"
-      style={{ padding: "20px 20% 0% 20%" }}
+      style={{ padding: "20px 20% 20px 20%" }}
+      id="home-section"
     >
       <div className="flex w-1/2 flex-col items-center justify-center">
         <div className="flex flex-col gap-2">
-          <h1 className="font-2 text-4xl">I'M EMRE GUVEN</h1>
+          <Typewriter text="I'M EMRE GUVEN" delay={150} />
           <p className="font-2 text-sm text-slate-500">FULL STACK DEVELOPER</p>
           <p className="font-2 text-base">
             a full stack developer based in Adana/Turkey specializing Mobile
