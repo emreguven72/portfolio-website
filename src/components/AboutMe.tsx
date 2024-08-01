@@ -5,6 +5,7 @@ const AboutMe = () => {
     <div
       className="flex flex-row justify-center"
       style={{ padding: "60px 20% 20px 20%" }}
+      id="about-me-section"
     >
       <div className="flex flex-col gap-5">
         <h1 className="font-2 text-2xl text-center">#ABOUT ME</h1>
