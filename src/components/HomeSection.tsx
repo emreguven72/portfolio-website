@@ -10,6 +10,7 @@ const HomeSection = () => {
     >
       <div className="flex w-1/2 flex-col items-center justify-center">
         <div className="flex flex-col gap-2">
+          <h1 className="text-4xl font-bold text-blue-500">HELLO</h1>
           <Typewriter text="I'M EMRE GUVEN" delay={150} />
           <p className="font-2 text-sm text-slate-500">FULL STACK DEVELOPER</p>
           <p className="font-2 text-base">
