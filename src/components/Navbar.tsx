@@ -8,8 +8,8 @@ const Navbar = () => {
       className="flex flex-row justify-between w-full bg-white border border-b-slate-300 items-center sticky top-0 z-20"
       style={{ padding: "15px 20% 15px 20%" }}
     >
-      <h1 className="text-2xl font-2">Emre Güven</h1>
-      <div className="flex gap-8 flex-row font-2 text-base">
+      <h1 className="text-2xl font-4">Emre Güven</h1>
+      <div className="flex gap-8 flex-row font-4 text-base">
         <a
           onClick={() => {
             setIndex(0);
@@ -17,7 +17,7 @@ const Navbar = () => {
           href="#"
         >
           <div className="flex flex-col items-center justify-center">
-            <p>Home</p>
+            <p>#Home</p>
             <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 0 ? 'opacity-0' : 'opacity-100'}`} />
           </div>
         </a>
@@ -28,7 +28,7 @@ const Navbar = () => {
           href="#about-me-section"
         >
           <div className="flex flex-col items-center justify-center">
-            <p>About Me</p>
+            <p>#About Me</p>
             <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 1 ? 'opacity-0' : 'opacity-100'}`} />
           </div>
         </a>
@@ -36,10 +36,10 @@ const Navbar = () => {
           onClick={() => {
             setIndex(2);
           }}
-          href="#"
+          href="#projects-section"
         >
           <div className="flex flex-col items-center justify-center">
-            <p>Experience</p>
+            <p>#Projects</p>
             <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 2 ? 'opacity-0' : 'opacity-100'}`} />
           </div>
         </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
           href="#"
         >
           <div className="flex flex-col items-center justify-center">
-            <p>Services</p>
+            <p>#Services</p>
             <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 3 ? 'opacity-0' : 'opacity-100'}`} />
           </div>
         </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
           href="#"
         >
           <div className="flex flex-col items-center justify-center">
-            <p>Projects</p>
+            <p>#Projects</p>
             <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 4 ? 'opacity-0' : 'opacity-100'}`} />
           </div>
         </a>

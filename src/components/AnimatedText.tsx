@@ -41,7 +41,7 @@ const Typewriter = ({ text, delay }: any) => {
   }, [currentIndex, delay, text]);
 
   return (
-    <span className="text-4xl font-bold text-blue-500">{currentText}</span>
+    <span className="text-4xl font-bold font-1 text-blue-500">{currentText}</span>
   );
 };
 
