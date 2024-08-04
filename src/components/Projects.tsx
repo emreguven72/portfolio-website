@@ -26,14 +26,14 @@ const ProjectCard = ({ link, title, body, image }: ProjectCardAttributes) => {
 
 const Projects = () => {
   return (
-    <div className="w-full bg-sky-100 font-4 text-center" id="projects-section">
+    <div className="w-full bg-sky-100 font-4 text-center" id="projects">
       <div
         className="flex flex-col justify-center gap-5"
         style={{ padding: "60px 20% 20px 20%" }}
-        id="home-section"
+        id="projects"
       >
         <h1 className="font-1 text-2xl text-center">#PROJECTS</h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <ProjectCard
             link="https://github.com/emreguven72/portfolio-website"
             title="Portfolio Website"

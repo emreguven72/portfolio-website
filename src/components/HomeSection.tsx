@@ -6,10 +6,10 @@ const HomeSection = () => {
       <div
       className="flex flex-col md:flex-row justify-center gap-10 md:gap-0"
       style={{ padding: "20px 20% 20px 20%" }}
-      id="home-section"
+      id="home"
     >
       <div className="flex md:w-1/2 flex-col items-center justify-center">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3">
           <h1 className="text-4xl font-bold font-1 text-blue-500">HELLO</h1>
           <Typewriter text="I'M EMRE GUVEN" delay={150} />
           <p className="font-4 text-sm text-slate-500">FULL STACK DEVELOPER</p>
@@ -19,9 +19,9 @@ const HomeSection = () => {
           </p>
           <div></div>
           <div>
-            <button className="rounded-md bg-neutral-700 text-center py-1 px-3 text-white font-4">
+            <a href="/Emre_Guven_Resume.pdf" download="Emre_Guven_Resume.pdf" className="rounded-md bg-neutral-700 text-center py-1 px-3 text-white font-4">
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </div>

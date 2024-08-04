@@ -173,15 +173,15 @@ const WhatsappIcon = () => {
 
 const AboutMe = () => {
   return (
-    <div
-      className="flex flex-col md:flex-row md:justify-center"
+    <div className="w-full" id="about-me">
+      <div
+      className="flex flex-col"
       style={{ padding: "60px 20% 20px 20%" }}
-      id="about-me-section"
     >
       <div className="flex flex-col gap-5">
         <h1 className="font-1 text-2xl text-center">#ABOUT ME</h1>
-        <div className="flex flex-row gap-20">
-          <div className="flex flex-col w-1/2 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+          <div className="flex flex-col md:w-1/2 items-center justify-center">
             <div className="flex flex-col gap-5">
               <p className="font-4 text-base">
                 I am a full stack software developer. I graduated from Mersin
@@ -191,7 +191,7 @@ const AboutMe = () => {
                 backend development, web development and mobile development. I
                 am a person who is always open and eager to learn.
               </p>
-              <div className="flex flex-col font-4 text-sm gap-1">
+              <div className="flex flex-col font-4 md:text-base gap-1">
                 <p>AGE: 24</p>
                 <p>EMAIL: emreguven72@gmail.com</p>
                 <p>PHONE NUMBER: +90 551 013 0330</p>
@@ -205,7 +205,7 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/2 items-center gap-5">
+          <div className="flex flex-col md:w-1/2 items-center gap-5">
             <div className="flex flex-col w-full">
               <h1 className="font-1 text-xl">React</h1>
               <ProgressBar finalProgress={85} />
@@ -225,6 +225,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

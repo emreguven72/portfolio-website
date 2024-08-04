@@ -1,4 +1,5 @@
 import AboutMe from './components/AboutMe';
+import Experiences from './components/Experiences';
 import HomeSection from './components/HomeSection';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -13,6 +14,7 @@ function App() {
         <HomeSection />
         <AboutMe />
         <Projects />
+        <Experiences />
       </div>
     </div>
   );

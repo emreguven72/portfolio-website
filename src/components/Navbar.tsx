@@ -32,19 +32,19 @@ const Navbar = () => {
               <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 0 ? 'opacity-0' : 'opacity-100'}`} />
             </div>
           </a>
-          <a onClick={() => { setIndex(1); setIsOpen(false); }} href="#about-me-section">
+          <a onClick={() => { setIndex(1); setIsOpen(false); }} href="#about-me">
             <div className="flex flex-col items-center justify-center">
               <p>About Me</p>
               <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 1 ? 'opacity-0' : 'opacity-100'}`} />
             </div>
           </a>
-          <a onClick={() => { setIndex(2); setIsOpen(false); }} href="#projects-section">
+          <a onClick={() => { setIndex(2); setIsOpen(false); }} href="#projects">
             <div className="flex flex-col items-center justify-center">
               <p>Projects</p>
               <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 2 ? 'opacity-0' : 'opacity-100'}`} />
             </div>
           </a>
-          <a onClick={() => { setIndex(3); setIsOpen(false); }} href="#">
+          <a onClick={() => { setIndex(3); setIsOpen(false); }} href="#experiences">
             <div className="flex flex-col items-center justify-center">
               <p>Experience</p>
               <div className={`h-2 w-2 rounded-full bg-blue-400 ${index != 3 ? 'opacity-0' : 'opacity-100'}`} />
