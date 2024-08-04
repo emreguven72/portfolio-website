@@ -7,6 +7,7 @@ const LinkedinIcon = () => {
       style={{ transitionDuration: "400ms" }}
       href="https://www.linkedin.com/in/emreguven72/"
       target="_blank"
+      rel="noreferrer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +37,7 @@ const GithubIcon = () => {
       style={{ transitionDuration: "400ms" }}
       href="https://github.com/emreguven72"
       target="_blank"
+      rel="noreferrer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +58,9 @@ const InstagramIcon = () => {
     <a
       className="transition-transform scale-x-100 scale-y-100 hover:scale-x-125 hover:scale-y-125"
       style={{ transitionDuration: "400ms" }}
+      href="https://github.com/emreguven72"
+      target="_blank"
+      rel="noreferrer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +134,7 @@ const WhatsappIcon = () => {
       style={{ transitionDuration: "400ms" }}
       href="https://api.whatsapp.com/send/?phone=%2B905510130330&text&type=phone_number&app_absent=0"
       target="_blank"
+      rel="noreferrer"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

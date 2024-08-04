@@ -6,7 +6,7 @@ const Typewriter = ({ text, delay }: any) => {
 
 
   useEffect(() => {
-    if(currentText.length == 1) {
+    if(currentText.length === 1) {
         setCurrentIndex(1);
     }
 
@@ -18,7 +18,7 @@ const Typewriter = ({ text, delay }: any) => {
 
       return () => clearTimeout(timeout);
     } else {
-      if(currentText == text) {
+      if(currentText === text) {
         setTimeout(() => {
             const timeout = setTimeout(() => {
                 setCurrentText((prevText) => prevText.slice(0, prevText.length - 1));
