@@ -1,15 +1,14 @@
-import profileImage from "../images/cv_picture.jpg";
 import Typewriter from "./AnimatedText";
 
 const HomeSection = () => {
   return (
     <div className="w-full bg-sky-100">
       <div
-      className="flex flex-row justify-center"
+      className="flex flex-col md:flex-row justify-center gap-10 md:gap-0"
       style={{ padding: "20px 20% 20px 20%" }}
       id="home-section"
     >
-      <div className="flex w-1/2 flex-col items-center justify-center">
+      <div className="flex md:w-1/2 flex-col items-center justify-center">
         <div className="flex flex-col gap-2">
           <h1 className="text-4xl font-bold font-1 text-blue-500">HELLO</h1>
           <Typewriter text="I'M EMRE GUVEN" delay={150} />
@@ -26,12 +25,11 @@ const HomeSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end w-1/2">
+      <div className="flex justify-end md:w-1/2">
         <img
-          src={profileImage}
-          className="rounded-md"
-          height="80%"
-          width="80%"
+          src="/images/cv_picture.webp"
+          className="rounded-md w-full md:w-4/5"
+          alt="cv_picture"
         />
       </div>
     </div>
