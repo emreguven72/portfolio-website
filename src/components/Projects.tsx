@@ -1,3 +1,5 @@
+import { useLanguage } from "../providers/LanguageProvider";
+
 interface ProjectCardAttributes {
   link: String;
   title: String;
@@ -25,6 +27,8 @@ const ProjectCard = ({ link, title, body, image }: ProjectCardAttributes) => {
 };
 
 const Projects = () => {
+  const { dictionary }: any = useLanguage();
+
   return (
     <div className="w-full bg-sky-100 font-4 text-center" id="projects">
       <div
@@ -32,48 +36,42 @@ const Projects = () => {
         style={{ padding: "60px 20% 20px 20%" }}
         id="projects"
       >
-        <h1 className="font-1 text-2xl text-center">#PROJECTS</h1>
+        <h1 className="font-1 text-2xl text-center">{dictionary.projectsTitle}</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <ProjectCard
             link="https://github.com/emreguven72/portfolio-website"
-            title="Portfolio Website"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.portfolioTitle}
+            body={dictionary.portfolioBody}
             image="/images/portfolio-website.webp"
           />
           <ProjectCard
             link="https://github.com/emreguven72/Spring-Inventory-Control-System-Backend"
-            title="Inventory Control System"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.inventoryTitle}
+            body={dictionary.inventoryBody}
             image="/images/inventory-control.webp"
           />
           <ProjectCard
             link="https://github.com/emreguven72/Mobiliz-Backend-Case/tree/main"
-            title="Vehicle Authorization System"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.vehicleTitle}
+            body={dictionary.vehicleBody}
             image="/images/vehicle-authorization.webp"
           />
           <ProjectCard
             link="https://github.com/emreguven72/React-Authorization-System"
-            title="User Authentication and Authorization System"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.authenticationTitle}
+            body={dictionary.authenticationBody}
             image="/images/react-authorization.webp"
           />
           <ProjectCard
             link="https://sustechclick.com/"
-            title="SustechClick Website"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.sustechTitle}
+            body={dictionary.sustechBody}
             image="/images/sustech-website.webp"
           />
           <ProjectCard
             link="https://kobidestekcileri.com/"
-            title="Kobi Destekçileri Website"
-            body="Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order."
+            title={dictionary.kobiTitle}
+            body={dictionary.kobiBody}
             image="/images/kobidestekcileri-website.webp"
           />
         </div>

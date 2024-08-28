@@ -1,3 +1,4 @@
+import { useLanguage } from "../providers/LanguageProvider";
 import ProgressBar from "./ProgressBar";
 
 const LinkedinIcon = () => {
@@ -78,12 +79,12 @@ const InstagramIcon = () => {
           gradientTransform="matrix(1 0 0 -1 0 64)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#efdcb1"></stop>
-          <stop offset="0" stop-color="#f2e0bb"></stop>
-          <stop offset=".011" stop-color="#f2e0bc"></stop>
-          <stop offset=".362" stop-color="#f9edd2"></stop>
-          <stop offset=".699" stop-color="#fef4df"></stop>
-          <stop offset="1" stop-color="#fff7e4"></stop>
+          <stop offset="0" stopColor="#efdcb1"></stop>
+          <stop offset="0" stopColor="#f2e0bb"></stop>
+          <stop offset=".011" stopColor="#f2e0bc"></stop>
+          <stop offset=".362" stopColor="#f9edd2"></stop>
+          <stop offset=".699" stopColor="#fef4df"></stop>
+          <stop offset="1" stopColor="#fff7e4"></stop>
         </radialGradient>
         <path
           fill="url(#TGwjmZMm2W~B4yrgup6jda_119026_gr1)"
@@ -97,17 +98,17 @@ const InstagramIcon = () => {
           gradientTransform="matrix(.6435 -.7654 .5056 .4251 -26.92 52.282)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".073" stop-color="#eacc7b"></stop>
-          <stop offset=".184" stop-color="#ecaa59"></stop>
-          <stop offset=".307" stop-color="#ef802e"></stop>
-          <stop offset=".358" stop-color="#ef6d3a"></stop>
-          <stop offset=".46" stop-color="#f04b50"></stop>
-          <stop offset=".516" stop-color="#f03e58"></stop>
-          <stop offset=".689" stop-color="#db359e"></stop>
-          <stop offset=".724" stop-color="#ce37a4"></stop>
-          <stop offset=".789" stop-color="#ac3cb4"></stop>
-          <stop offset=".877" stop-color="#7544cf"></stop>
-          <stop offset=".98" stop-color="#2b4ff2"></stop>
+          <stop offset=".073" stopColor="#eacc7b"></stop>
+          <stop offset=".184" stopColor="#ecaa59"></stop>
+          <stop offset=".307" stopColor="#ef802e"></stop>
+          <stop offset=".358" stopColor="#ef6d3a"></stop>
+          <stop offset=".46" stopColor="#f04b50"></stop>
+          <stop offset=".516" stopColor="#f03e58"></stop>
+          <stop offset=".689" stopColor="#db359e"></stop>
+          <stop offset=".724" stopColor="#ce37a4"></stop>
+          <stop offset=".789" stopColor="#ac3cb4"></stop>
+          <stop offset=".877" stopColor="#7544cf"></stop>
+          <stop offset=".98" stopColor="#2b4ff2"></stop>
         </radialGradient>
         <path
           fill="url(#TGwjmZMm2W~B4yrgup6jdb_119026_gr2)"
@@ -162,9 +163,9 @@ const WhatsappIcon = () => {
         ></path>
         <path
           fill="#fff"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         ></path>
       </svg>
     </a>
@@ -172,6 +173,8 @@ const WhatsappIcon = () => {
 };
 
 const AboutMe = () => {
+  const { dictionary }: any = useLanguage();
+
   return (
     <div className="w-full" id="about-me">
       <div
@@ -179,22 +182,17 @@ const AboutMe = () => {
       style={{ padding: "60px 20% 20px 20%" }}
     >
       <div className="flex flex-col gap-5">
-        <h1 className="font-1 text-2xl text-center">#ABOUT ME</h1>
+        <h1 className="font-1 text-2xl text-center">{dictionary.aboutTitle}</h1>
         <div className="flex flex-col md:flex-row gap-10 md:gap-20">
           <div className="flex flex-col md:w-1/2 items-center justify-center">
             <div className="flex flex-col gap-5">
               <p className="font-4 text-base">
-                I am a full stack software developer. I graduated from Mersin
-                University, Department of Computer Engineering in 2023. I am
-                currently working on a small company as a full stack developer
-                in Adana. I worked on projects in many different fields such as
-                backend development, web development and mobile development. I
-                am a person who is always open and eager to learn.
+                {dictionary.aboutIntroduction}
               </p>
               <div className="flex flex-col font-4 md:text-base gap-1">
-                <p>AGE: 24</p>
-                <p>EMAIL: emreguven72@gmail.com</p>
-                <p>PHONE NUMBER: +90 551 013 0330</p>
+                <p>{dictionary.aboutAge}: 24</p>
+                <p>{dictionary.aboutMail}: emreguven72@gmail.com</p>
+                <p>{dictionary.aboutPhone}: +90 551 013 0330</p>
               </div>
 
               <div className="flex flex-row gap-2">

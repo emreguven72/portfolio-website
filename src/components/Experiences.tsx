@@ -1,3 +1,5 @@
+import { useLanguage } from "../providers/LanguageProvider";
+
 interface ExperienceAttributes {
   companyName: String;
   location: String;
@@ -67,6 +69,8 @@ const ReverseExperience = ({
 };
 
 const Experiences = () => {
+  const { dictionary }: any = useLanguage();
+  
   return (
     <div className="w-full font-4 text-center" id="projects">
       <div
@@ -74,15 +78,14 @@ const Experiences = () => {
         style={{ padding: "60px 20% 20px 20%" }}
         id="experiences"
       >
-        <h1 className="font-1 text-2xl text-center">#Experiences</h1>
+        <h1 className="font-1 text-2xl text-center">{dictionary.experienceTitle}</h1>
         <div className="flex flex-col justify-center gap-5 md:gap-0">
           <Experience
             companyName="Onay Yazılım"
-            location="Adana/Turkey"
-            position="Full Stack Developer"
-            explonation="I developed two different mobile applications from scratch using Flutter and NodeJS. I am
-currently working on a web application using React and NodeJS with a small team"
-            time="November 2023 - Present"
+            location={dictionary.onayLocation}
+            position={dictionary.onayPosition}
+            explonation={dictionary.onayExplonation}
+            time={dictionary.onayTime}
           />
           <div
             className="hidden md:flex h-14 bg-slate-300 self-center"
@@ -90,11 +93,10 @@ currently working on a web application using React and NodeJS with a small team"
           />
           <ReverseExperience
             companyName="Arnios"
-            location="Mersin/Turkey"
-            position="Full Stack Developer"
-            explonation="I participated to development of a web application called Arazim Cebimde. I developed this
-web application Using Angular and NodeJs"
-            time="March 2023 - June 2023"
+            location={dictionary.arniosLocation}
+            position={dictionary.arniosPosition}
+            explonation={dictionary.arniosExplonation}
+            time={dictionary.arniosTime}
           />
           <div
             className="hidden md:flex h-14 bg-slate-300 self-center"
@@ -102,11 +104,10 @@ web application Using Angular and NodeJs"
           />
           <Experience
             companyName="Hemengeliriz"
-            location="Mersin/Turkey"
-            position="Full Stack Developer"
-            explonation="I did a voluntary internship here when I was in my third year of university. I participated to
-development of a web application called hemengeliriz. I used PHP Laravel in this internship"
-            time="March 2022 - October 2022"
+            location={dictionary.hemengelirizLocation}
+            position={dictionary.hemengelirizPosition}
+            explonation={dictionary.hemengelirizExplonation}
+            time={dictionary.hemengelirizTime}
           />
         </div>
       </div>
