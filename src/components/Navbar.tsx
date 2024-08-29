@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../providers/LanguageProvider";
 import enFlag from "../flag-for-flag-united-kingdom-svgrepo-com.svg";
 import trFlag from "../flag-for-turkey-svgrepo-com.svg";
+import closeIcon from "../icons8-close.svg";
 
 const Navbar = () => {
   const [index, setIndex] = useState(0);
@@ -60,7 +61,10 @@ const Navbar = () => {
         } md:static md:translate-x-0 md:flex md:items-center`}
       >
         <div className="flex flex-col md:flex-row gap-8 font-4 text-base">
-        <div className="flex flex-row gap-2 md:hidden justify-center mt-10">
+        <button className="self-center flex mt-10 md:hidden" onClick={toggleMenu}>
+            <img src={closeIcon} className="h-8" />
+          </button>
+        <div className="flex flex-row gap-2 md:hidden justify-center">
           <button onClick={setLanguageTR}>
             <img src={trFlag} className="h-8" />
           </button>
